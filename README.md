@@ -51,31 +51,20 @@ Download each model, unzip them and place them in the `models` folder of this pr
 
 Put each model into a folder that you also reference in the `Constants` section of the inference notebook. Each model folder should have the following sub-structure (omit the `best` folder for ridge regression models):
 
-model_name
-|
---model_fold_0
-|
-----best
-|
---model_fold_1
-|
-----best
-|
---model_fold_2
-|
-----best
-|
---model_fold_3
-|
-----best
-|
---model_fold_4
-|
-----best
-|
---model_fold_5
-|
-----best
+.
+└── model_name/
+    ├── model_fold_0/
+    │   └── best
+    ├── model_fold_1/
+    │   └── best
+    ├── model_fold_2/
+    │   └── best
+    ├── model_fold_3/
+    │   └── best
+    ├── model_fold_4/
+    │   └── best
+    └── model_fold_5/
+        └── best
 
 For pseudo-labeling, you will have to take the output from 03_clrp_data_labeling.ipynb and upload it as a Kaggle dataset. Then use this Kaggle notebook to predict the uploaded data: https://www.kaggle.com/mathislucka/commonlit-two-models
 
