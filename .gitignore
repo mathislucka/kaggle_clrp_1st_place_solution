@@ -1,3 +1,5 @@
+CLRP_A_MODEL_SUMMARY.pdf
+
 data/training/cv/*
 !data/training/cv/.gitkeep
 
